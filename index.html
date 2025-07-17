@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <title>Web LDR Tema Hitam</title>
+  <meta charset="UTF-8">
+  <title>apip ganteng</title>
   <style>
     body {
       background-color: #111;
@@ -53,9 +53,11 @@
       transform: translateY(0);
     }
 
-    video {
+    iframe {
       width: 90vw;
       max-width: 600px;
+      aspect-ratio: 16/9;
+      border: none;
       border-radius: 10px;
     }
 
@@ -90,10 +92,10 @@
   <button onclick="tampilkanVideo()">Klik dulu ya</button>
 
   <div class="video-container" id="videoBox">
-    <video controls autoplay muted>
-      <source src="video.mp4" type="video/mp4">
-      Browser kamu tidak mendukung video ini.
-    </video>
+    <iframe 
+      src="https://www.youtube.com/embed/e-_GQyzZ_C8?autoplay=1&mute=1"
+      title="YouTube video" allow="autoplay; encrypted-media" allowfullscreen>
+    </iframe>
   </div>
 
   <script>
